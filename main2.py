@@ -58,6 +58,6 @@ print("Valid rows:", len(valid_rows))
 print("Invalid rows:", len(invalid_rows))
 
 if invalid_rows:
-    print("\nSample validation errors:")
-    for errors in invalid_rows[:3]:
+    print("\validation errors are as below:")
+    for errors in invalid_rows[:]:
         print(errors)
