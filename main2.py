@@ -43,7 +43,7 @@ DynamicModel = create_model("DynamicModel", **fields)
 valid_rows = []
 invalid_rows = []
 
-for index, row in df.iterrows():
+for index, row in file_path.iterrows():
     try:
         validated = DynamicModel(**row.to_dict())
         valid_rows.append(validated.dict())
